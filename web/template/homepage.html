@@ -1,113 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/css/homepage.css">
-    <title>Luu</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio Luu</title>
+    <link href="../static/css/tailwind.generated.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+        body, html { font-family: 'Montserrat', sans-serif; }
+    </style>
 </head>
-<body>
-<div class="background">
-    <div class="main">
-        <div class="profile-section">
-            <img src="../static/images/tapi.png" alt="tapi">
-            <div class="text-container">
-                <h1>Luu</h1>
-                <p>Student in IT</p>
-            </div>
-        </div>
-        <div class="socials-container">
-            <a href="https://linktr.ee/x_luu__" target="_blank">
-                <img src="../static/images/Linktree.png" alt="linktree">
+<body class="min-h-screen bg-gradient-to-br from-[#67A07D] to-[#a0f2c0] text-[#F4F0EA] relative">
+
+<!-- Header and Profile -->
+<div class="max-w-2xl mx-auto text-center py-20">
+    <img src="../static/images/profile.jpg" class="w-48 h-48 mx-auto rounded-full shadow-xl border-8 border-[#000000]" alt="Luu" />
+    <h1 class="font-extrabold text-4xl text-[#000000] mt-8 mb-4">Luu</h1>
+
+    <h2 class="text-xl text-[#000000] mb-6">Your favorite IT student, streamer, unconfident author & lucky charm !</h2>
+    <div class="flex flex-col items-center gap-4 mb-6">
+        <div class="flex justify-center gap-4 w-full">
+            <a href="https://linktr.ee/x_luu__" target="_blank" aria-label="Linktree" class="p-2 border border-[#000000] rounded hover:bg-[#67A07D] transition">
+                <img src="../static/images/Linktree.png" alt="Linktree" class="w-8 h-8 rounded" />
             </a>
-            <a href="https://github.com/xLuuxx" target="_blank">
-                <img src="../static/images/github.png" alt="github">
+            <a href="https://github.com/xLuuxx" target="_blank" aria-label="GitHub" class="p-2 border border-[#000000] rounded hover:bg-[#67A07D] transition">
+                <img src="../static/images/github.png" alt="GitHub" class="w-8 h-8 rounded" />
             </a>
-            <a href="https://www.linkedin.com/in/laurine-camuset-431676289/" target="_blank">
-                <img src="../static/images/linkedin.png" alt="linkedin">
+            <a href="https://www.linkedin.com/in/laurine-camuset-431676289/" target="_blank" aria-label="LinkedIn" class="p-2 border border-[#000000] rounded hover:bg-[#67A07D] transition">
+                <img src="../static/images/linkedin.png" alt="LinkedIn" class="w-8 h-8 rounded" />
             </a>
         </div>
-    </div>
-
-    <div class="projects-container">
-        <div class="Projet-1">
-            <a href="../../web/template/hangman.html" class="see-more-btn">See more</a>
-            <div class="Project-1-status">
-                <p>Hangman Classic,</p>
-                <p>The famous game where you have to find a word in 10 tries.
-                    Project made in Golang.</p>
-                <div class="socials-container-project-1">
-                    <a href="https://github.com/xLuuxx/Hangman-Classic.git" target="_blank">
-                        <img src="../static/images/github.png" alt="github">
-                    </a>
-                    <div class="team-container">
-                        <img src="../static/images/team.png" alt="team">
-                        <p>Team Project</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="Projet-2">
-            <a href="../../web/template/groupieTracker.html" class="see-more-btn">See more</a>
-            <div class="Project-2-status">
-                <p>Groupie Tracker,</p>
-                <p>Be a groupie for your favorite group at any time!<br>
-                    Project made in HTML, CSS and Golang.</p>
-                <div class="socials-container-project-2">
-                    <a href="https://github.com/xLuuxx/Groupie-Tracker.git" target="_blank">
-                        <img src="../static/images/github.png" alt="github">
-                    </a>
-                    <a href="https://groupie-tracker.devbyluu.me" target="_blank">
-                        <img src="../static/images/click.png" alt="github">
-                    </a>
-                    <div class="team-container">
-                        <img src="../static/images/team.png" alt="team">
-                        <p>Team Project</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="Projet-3">
-            <a href="../../web/template/jacquesLeFendeur.html" class="see-more-btn">See more</a>
-            <div class="Project-3-status">
-                <p>L'affaire Jacques le Fendeur,</p>
-                <p>Will you resolve the mystery case? <br>  
-                    Project made in HTML, CSS and JS.</p>
-                <div class="socials-container-project-3">
-                    <a href="https://github.com/xLuuxx/escape-game" target="_blank">
-                        <img src="../static/images/github.png" alt="github">
-                    </a>
-                    <a href="https://escapegame.atmosphere.ovh/escape-game/" target="_blank">
-                        <img src="../static/images/click.png" alt="github">
-                    </a>
-                    <div class="team-container">
-                        <img src="../static/images/team.png" alt="team">
-                        <p>Team Project</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="Projet-4">
-            <a href="../../web/template/cards.html" class="see-more-btn">See more</a>
-            <div class="Project-4-status">
-                <p>Cards,</p>
-                <p>Want to play some cards game ? <br>
-                    Project made in JAVA.</p>
-                <div class="socials-container-project-4">
-                    <a href="https://github.com/xLuuxx/cards-java" target="_blank">
-                        <img src="../static/images/github.png" alt="github">
-                    </a>
-                    <div class="team-container">
-                        <img src="../static/images/solo.png" alt="team">
-                        <p>Solo Project</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <a href="../static/images/cv_laurine_camuset_portfolio.jpg" download class="px-6 py-2 rounded bg-[#67A07D] text-black font-semibold hover:bg-[#5B8F6D] transition mt-4">
+            Télécharger mon CV
+        </a>
     </div>
 </div>
+
+
+<section id="projects-grid" class="max-w-6xl mx-auto px-4 py-8 grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+</section>
+
+<script src="../javascript/homepage.js"></script>
 </body>
 </html>

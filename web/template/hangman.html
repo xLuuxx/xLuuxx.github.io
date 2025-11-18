@@ -2,37 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../static/css/groupieTracker.css">
     <title>Hangman</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body, html { font-family: 'Montserrat', sans-serif; }
+    </style>
 </head>
-<body>
-<a href="../../web/template/homepage.html" class="back-btn">← Go Back</a>
+<body class="min-h-screen bg-gradient-to-br from-[#67A07D] to-[#a0f2c0] text-[#F4F0EA] relative">
 
-<div class="project-container">
-    <div class="project-header">
-        <h1>Hangman</h1>
-        <p>My first ever team project in Golang.</p>
-        <div class="links-container">
+<div class="max-w-2xl mx-auto mt-12 mb-8 bg-[#FFFFF0] rounded-2xl shadow-xl p-8">
+    <a href="../../web/template/homepage.html" class="text-[#000000] font-bold hover:underline text-sm mb-6 inline-block">← Go Back</a>
+    <div class="project-header text-center mb-6">
+        <h1 class="text-2xl text-[#000000] sm:text-3xl font-bold mb-4">Hangman</h1>
+        <p class="text-[#000000] text-lg mb-4">My first ever team project in Golang.</p>
+        <div class="flex justify-center gap-4">
             <a href="https://github.com/xLuuxx/Hangman-Classic" target="_blank">
-                <img src="../static/images/github.png" alt="GitHub">
+                <img src="../static/images/github.png" alt="GitHub" class="w-8 h-8 rounded hover:scale-110 transition">
             </a>
         </div>
     </div>
 
-    <div class="project-details">
-        <div class="detail-card">
-            <h2>Description</h2>
-            <p>My first program with Golang. Will you find the word under ten tries?</p>
+    <div class="project-details flex flex-col gap-6 mt-10">
+        <div class="detail-card bg-[#bg-[#4F3B2C]/70 rounded-xl p-6 shadow">
+            <h2 class="text-xl font-bold text-[#67A07D] mb-2">Description</h2>
+            <p class="text-[#000000]">My first program with Golang. Will you find the word under ten tries?</p>
         </div>
 
-        <div class="detail-card">
-            <h2>Technologies</h2>
-            <p>• Golang<br></p>
+        <div class="detail-card bg-[#bg-[#4F3B2C]/70 rounded-xl p-6 shadow">
+            <h2 class="text-xl font-bold text-[#67A07D] mb-2">Technologies</h2>
+            <p class="text-[#000000]">• Golang<br></p>
         </div>
 
-        <div class="detail-card">
-            <h2>Characteristics</h2>
-            <p>• Run in terminal.<br></p>
+        <div class="detail-card bg-[#bg-[#4F3B2C]/70 rounded-xl p-6 shadow">
+            <h2 class="text-xl font-bold text-[#67A07D] mb-2">Characteristics</h2>
+            <p class="text-[#000000]">• Run in terminal.<br></p>
         </div>
     </div>
 </div>
